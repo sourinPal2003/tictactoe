@@ -1,0 +1,215 @@
+        .totalarea {
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid green; */
+            user-select: none;
+        }
+
+        .total {
+            width: 1129px;
+            height: 715px;
+            /* border: 2px solid red; */
+            background: url(background.jpg) no-repeat center center /cover;
+
+        }
+
+        .container {
+            /* border: 2px solid blue; */
+
+            width: 402px;
+            height: 402px;
+            position: relative;
+            top: 78px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .boxes {
+            border: 9px solid #000000;
+            color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 0;
+            margin: 4px;
+            font-size: 98px;
+            text-align: center;
+            height: 126px;
+            width: 126px;
+        }
+
+        #box1 {
+            border-left: none;
+            border-top: none;
+        }
+
+        #box2 {
+            border-top: none;
+        }
+
+        #box3 {
+            border-right: none;
+            border-top: none;
+        }
+
+        #box4 {
+            border-left: none;
+        }
+
+        #box6 {
+            border-right: none;
+        }
+
+        #box7 {
+            border-left: none;
+            border-bottom: none;
+        }
+
+        #box8 {
+            border-bottom: none;
+        }
+
+        #box9 {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        #X_name {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 79px;
+            left: 61px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #X_score {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 125px;
+            left: 61px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #O_name {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 79px;
+            right: -35px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #O_score {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 125px;
+            right: -35px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        .r1 {
+            /* border: 1px solid rgb(81, 25, 81); */
+            height: 515px;
+            display: flex;
+
+        }
+
+        .r2 {
+            /* border: 1px solid rgb(58, 14, 58); */
+            height: 199px;
+        }
+
+        .r1-c1 {
+            /* border: 2px solid red; */
+            width: 254px;
+
+        }
+
+        .r1-c2 {
+            /* border: 2px solid red; */
+            width: 608px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .r1-c3 {
+            /* border: 2px solid red; */
+            width: 256px;
+        }
+
+        #Complement {
+            /* border: 2px solid #17ff00; */
+            color: white;
+            font-family: 'Lobster', cursive;
+            font-size: 9px;
+            display: inline-block;
+            height: 153px;
+            width: 423px;
+            position: relative;
+            left: 97px;
+            top: 13px;
+            text-align: center;
+            font-size: 66px;
+            box-sizing: border-box;
+            padding-top: 28px;
+        }
+
+        #btn {
+            /* border: 2px solid #17ff00; */
+            border: none;
+            color: #ffffff;
+            font-family: 'Lobster', cursive;
+            background: transparent;
+            display: inline-block;
+            height: 170px;
+            width: 465px;
+            position: relative;
+            left: 171px;
+            top: 16px;
+            text-align: center;
+            font-size: 66px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 95px;
+            margin: 0px;
+            font-family: 'Lobster', cursive;
+        }
+
+        /* For mobile view */
+        @media (max-width:760px) {
+
+            .totalarea {
+                /* background-color: #ff0000; */
+                width: 325%;
+            }
+
+            .total {
+                width: 1130px;
+            }
+
+        }
+
+        /* For TAB view */
+        @media (min-width:761px) and (max-width:1148px) {
+            .totalarea {
+                /* background-color: #ff0000; */
+                width: 159%;
+            }
+            .total {
+                width: 1130px;
+            }
+
+        }

@@ -1,0 +1,47 @@
+<!-- made by ~sourinPal2003-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="totalarea">
+        <div class="total">
+            <div class="r1">
+                <div class="r1-c1">
+                    <p id="X_name">X</p>
+                    <p id="X_score">0</p>
+                </div>
+                <div class="r1-c2">
+                    <div class="container" onclick="checkWin()">
+                        <div id="box1" class="boxes" onclick="makeMove(1)"></div>
+                        <div id="box2" class="boxes" onclick="makeMove(2)"></div>
+                        <div id="box3" class="boxes" onclick="makeMove(3)"></div>
+                        <div id="box4" class="boxes" onclick="makeMove(4)"></div>
+                        <div id="box5" class="boxes" onclick="makeMove(5)"></div>
+                        <div id="box6" class="boxes" onclick="makeMove(6)"></div>
+                        <div id="box7" class="boxes" onclick="makeMove(7)"></div>
+                        <div id="box8" class="boxes" onclick="makeMove(8)"></div>
+                        <div id="box9" class="boxes" onclick="makeMove(9)"></div>
+                    </div>
+                </div>
+                <div class="r1-c3">
+                    <p id="O_name">O</p>
+                    <p id="O_score">0</p>
+                </div>
+            </div>
+            <div class="r2">
+                <span id="Complement">X's Turn.</span>
+                <input type="button" id="btn" value="Replay" onclick="rePlay()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
