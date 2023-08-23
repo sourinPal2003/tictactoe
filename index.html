@@ -1,6 +1,6 @@
-<!-- made by ~sourinPal2003-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,241 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <style>
+        .totalarea {
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid green; */
+            user-select: none;
+        }
+
+        .total {
+            width: 1129px;
+            height: 715px;
+            /* border: 2px solid red; */
+            background: url(woodBackground.png) no-repeat center center /cover;
+            filter: drop-shadow(12px 10px 5px rgba(0, 0, 0, 0.5));
+
+        }
+
+        .container {
+            /* border: 2px solid blue; */
+
+            width: 402px;
+            height: 402px;
+            position: relative;
+            top: 78px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #chalkCross {
+            position: absolute;
+            left: 269px;
+            top: 65px;
+            height: 424px;
+            width: 597px;
+
+        }
+
+        .boxes {
+            /* border: 9px solid #000000; */
+            border: none;
+            color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 0;
+            margin: 4px;
+            font-size: 98px;
+            text-align: center;
+            height: 126px;
+            width: 126px;
+        }
+
+        #box1 {
+            border-left: none;
+            border-top: none;
+        }
+
+        #box2 {
+            border-top: none;
+        }
+
+        #box3 {
+            border-right: none;
+            border-top: none;
+        }
+
+        #box4 {
+            border-left: none;
+        }
+
+        #box6 {
+            border-right: none;
+        }
+
+        #box7 {
+            border-left: none;
+            border-bottom: none;
+        }
+
+        #box8 {
+            border-bottom: none;
+        }
+
+        #box9 {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        #X_name {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 79px;
+            left: 61px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #X_score {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 125px;
+            left: 61px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #O_name {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 79px;
+            right: -35px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        #O_score {
+            /* border: 1px solid #17ff00; */
+            height: 170px;
+            width: 170px;
+            position: relative;
+            top: 125px;
+            right: -35px;
+            box-sizing: border-box;
+            padding-top: 33px;
+        }
+
+        .r1 {
+            /* border: 1px solid rgb(81, 25, 81); */
+            height: 515px;
+            display: flex;
+
+        }
+
+        .r2 {
+            /* border: 1px solid rgb(58, 14, 58); */
+            height: 199px;
+        }
+
+        .r1-c1 {
+            /* border: 2px solid red; */
+            width: 254px;
+
+        }
+
+        .r1-c2 {
+            /* border: 2px solid red; */
+            width: 608px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .r1-c3 {
+            /* border: 2px solid red; */
+            width: 256px;
+        }
+
+        #Complement {
+
+            /* border: 2px solid #17ff00; */
+
+            color: white;
+            font-family: 'Lobster', cursive;
+            font-size: 9px;
+            display: inline-block;
+            height: 153px;
+            width: 423px;
+            position: relative;
+            left: 97px;
+            top: 13px;
+            text-align: center;
+            font-size: 66px;
+            box-sizing: border-box;
+            padding-top: 28px;
+        }
+
+        #btn {
+            /* border: 2px solid #17ff00; */
+            border: none;
+            color: #ffffff;
+            font-family: 'Lobster', cursive;
+            background: transparent;
+            display: inline-block;
+            height: 170px;
+            width: 465px;
+            position: relative;
+            left: 171px;
+            top: 16px;
+            text-align: center;
+            font-size: 66px;
+            box-sizing: border-box;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 95px;
+            margin: 0px;
+            font-family: 'Lobster', cursive;
+
+
+        }
+
+        /* For mobile view */
+        @media (max-width:760px) {
+
+            .totalarea {
+                /* background-color: #ff0000; */
+                width: 325%;
+            }
+
+            .total {
+                width: 1130px;
+            }
+
+        }
+
+        /* For TAB view */
+        @media (min-width:761px) and (max-width:1148px) {
+            .totalarea {
+                /* background-color: #ff0000; */
+                width: 159%;
+            }
+
+            .total {
+                width: 1130px;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="totalarea">
         <div class="total">
@@ -20,6 +252,7 @@
                     <p id="X_score">0</p>
                 </div>
                 <div class="r1-c2">
+                    <img src="chalk_cross.png" id="chalkCross" alt="">
                     <div class="container" onclick="checkWin()">
                         <div id="box1" class="boxes" onclick="makeMove(1)"></div>
                         <div id="box2" class="boxes" onclick="makeMove(2)"></div>
@@ -43,5 +276,112 @@
             </div>
         </div>
     </div>
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+    <script>
+        let c = 0;
+        let firstTurn = 0;
+        let gameOver = false;
+        let Xwin = 0;
+        let Owin = 0;
+        let totalGamePlay = 0;
+
+        function makeMove(boxId) {
+            if (!gameOver) {
+                const box = document.getElementById(`box${boxId}`);
+                if (box.innerHTML === "") {
+                    const player = (c % 2 === 0) ? 'X' : 'O';
+                    const nextPlayer = (c % 2 === 0) ? 'O' : 'X';
+                    box.innerHTML = player;
+                    c++;
+
+                    document.getElementById("Complement").innerHTML = nextPlayer + "'s Turn.";
+                    checkWin();
+                }
+            }
+        }
+
+
+        const lines = [
+            [1, 2, 3], [4, 5, 6], [7, 8, 9], // rows
+            [1, 4, 7], [2, 5, 8], [3, 6, 9], // columns
+            [1, 5, 9], [3, 5, 7] // diagonals
+        ];
+
+
+        function checkWin() {
+            if (!gameOver) {
+                for (const line of lines) {
+                    const [a, b, c] = line;
+                    if (document.getElementById(`box${a}`).innerHTML !== "" &&
+                        document.getElementById(`box${a}`).innerHTML === document.getElementById(`box${b}`).innerHTML &&
+                        document.getElementById(`box${a}`).innerHTML === document.getElementById(`box${c}`).innerHTML) {
+                        for (const l of line) {
+                            document.getElementById(`box${l}`).style.color = "yellow";
+                        }
+                        gameOver = true;
+                        const winner = document.getElementById(`box${a}`).innerHTML;
+                        document.getElementById("Complement").innerHTML = winner + " is win!";
+                        if (winner === 'X') Xwin++;
+                        else if (winner === 'O') Owin++;
+                        showScore();
+                        gameOver = true;
+                        return;
+                    }
+                }
+
+
+                if (firstTurn === 0) {
+                    if (c === 9) {
+                        document.getElementById("Complement").innerHTML = "Match Draw!";
+                        gameOver = true;
+                        return;
+                    }
+                }
+                else if (firstTurn === 1) {
+                    if (c === 10) {
+                        document.getElementById("Complement").innerHTML = "Match Draw!";
+                        gameOver = true;
+                        return;
+                    }
+                }
+            }
+        }
+
+        function showScore() {
+            document.getElementById("X_score").innerHTML = Xwin;
+            document.getElementById("O_score").innerHTML = Owin;
+        }
+
+        function rePlay() {
+            const boxIds = ['box1', 'box2', 'box3', 'box4', 'box5', 'box6', 'box7', 'box8', 'box9'];
+
+            for (const boxId of boxIds) {
+                document.getElementById(boxId).innerHTML = "";
+            }
+
+            // document.getElementById("Complement").innerHTML = "Playing...";
+            gameOver = false;
+
+            totalGamePlay++;
+            if (totalGamePlay % 2 === 0) {
+                c = 0;
+                firstTurn = 0;
+            }
+            if (!(totalGamePlay % 2 === 0)) {
+                c = 1;
+                firstTurn = 1;
+            }
+
+            for (const line of lines) {
+                const [a, b, c] = line;
+                for (const l of line) {
+                    document.getElementById(`box${l}`).style.color = "white";
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>
